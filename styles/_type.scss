@@ -1,0 +1,68 @@
+$text-sml: 11px;
+$text-base: 12px;
+$text-med: 14px;
+$text-lrg: 18px;
+$text-xlrg: 24px;
+$text-huge: 32px;
+
+$regular: 300;
+$medium: 500;
+$bold: 700;
+
+$roboto: "Roboto", sans-serif;
+$kruna: "Krona One", sans-serif;
+$antonio: "Antonio", sans-serif;
+
+.u-type {
+	&--sml {
+		font-size: $text-sml;
+	}
+
+	&--base {
+		font-size: $text-base;
+	}
+
+	&--med {
+		font-size: $text-med;
+	}
+
+	&--lrg {
+		font-size: $text-lrg;
+	}
+
+	&--xlrg {
+		font-size: $text-xlrg;
+	}
+
+	&--huge {
+		font-size: $text-huge;
+	}
+
+	&--wgt {
+		&--regular {
+			font-weight: $regular;
+		}
+
+		&--medium {
+			font-weight: $medium;
+		}
+
+		&--bold {
+			font-weight: $bold;
+		}
+	}
+
+	&--font {
+		&--roboto {
+			font-family: $roboto;
+		}
+
+		&--kruna {
+			font-family: $kruna;
+		}
+
+		&--antonio {
+			font-family: $antonio;
+		}
+	}
+}

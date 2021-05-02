@@ -1,0 +1,25 @@
+@import "../../styles/colors";
+@import "../../styles/type";
+
+.login {
+	&__header {
+		margin-bottom: 12px;
+
+		font-size: $text-huge;
+		font-weight: $medium;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		& input {
+			width: 320px;
+
+			padding: 8px 12px;
+			margin-bottom: 12px;
+
+			outline: none;
+		}
+	}
+}
