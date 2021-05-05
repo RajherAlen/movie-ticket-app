@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Login from "../components/Login/Login";
-
+import SignUp from "../components/SignUp/SignUp";
 
 export default function Home() {
 	return (
@@ -14,7 +14,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Login />
+			{false ? <Login /> : <SignUp />}
 		</div>
 	);
 }

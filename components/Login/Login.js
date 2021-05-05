@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Login = () => {
 	return (
@@ -15,7 +16,27 @@ const Login = () => {
 					<input type="text" placeholder="Email" />
 					<input type="password" placeholder="Passwor" />
 				</div>
+
+				<button className="btn btn--primary btn--full">Login</button>
 			</form>
+
+			<p className="login__signUp-link">
+				Don't have account?
+				<Link href="/register">
+					<span>SIGN UP</span>
+				</Link>
+			</p>
+
+			{/* // TODO - ADD GOOGLE SIGN */}
+			{/* <div className="login__footer">
+				<div>
+					<p>
+						<span></span> or <span></span>{" "}
+					</p>
+
+					
+				</div>
+			</div> */}
 		</div>
 	);
 };

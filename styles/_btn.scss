@@ -1,0 +1,56 @@
+$radius-base: 6px;
+$unit: 4px;
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+
+	touch-action: manipulation;
+	user-select: none;
+
+	cursor: pointer;
+	white-space: nowrap;
+	text-decoration: none;
+	text-align: center;
+	
+    border: 0;
+    outline: 0;
+
+	&:focus {
+		outline: 0;
+	}
+
+	min-width: 100px;
+	font-family: $roboto;
+	font-weight: $medium;
+	border-radius: $radius-base;
+	transition: all 300ms;
+
+
+    &--sml {
+        min-width: 50px;
+        font-size: $text-sml;
+        padding: calc(#{$unit} * 1) calc(#{$unit} * 3);
+    }
+
+    &--base {
+        font-size: $text-base;
+        padding: calc(#{$unit} * 2) calc(#{$unit} * 5);
+    }
+
+    &--med {
+        font-size: $text-base;
+        padding: calc(#{$unit} * 3) calc(#{$unit} * 8);
+    }
+
+    &--full {
+        width: 100%;
+        padding: calc(#{$unit} * 3) calc(#{$unit} * 8);
+    }
+
+    &--primary {
+        background: $background-primary;
+    }
+}
